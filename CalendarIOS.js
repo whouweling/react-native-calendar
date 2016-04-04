@@ -140,7 +140,14 @@ let Calendar = React.createClass({
       customStyle: {},
     }
   },
-
+  
+  componentWillReceiveProps(props) {
+      this.setState({
+        selectedDate: moment(props.selectedDate).format(),
+        currentMonth: moment(props.startDate).format()
+      })
+  },
+  
   getInitialState() {
     return {
       calendarDates: this.getInitialStack(),
