@@ -1,6 +1,7 @@
 'use strict';
 
 let React = require('react-native');
+let ReactNative = require('react-native');
 let moment = require('moment');
 
 let {
@@ -10,8 +11,11 @@ let {
   Text,
   TouchableOpacity,
   TouchableWithoutFeedback,
-  PropTypes,
   View
+} = ReactNative;
+
+let {
+  PropTypes,
 } = React;
 
 let
